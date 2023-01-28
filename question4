@@ -1,0 +1,25 @@
+Please write the algorithm flow with pseudo-code or any software language which displays all prime numbers having 3 digits and 
+starting with 5. Please paste the link to the answer shared using Pastebin or any other similar website. 
+Please make sure that the link will not be expired.
+
+
+Algorithm in Python that displays all prime numbers having 3 digits and starting with 5:
+
+def find_prime_numbers_starting_with_5():
+    for num in range(500, 1000):
+        if num % 2 != 0:
+            for i in range(2, num):
+                if (num % i) == 0:
+                    break
+            else:
+                if str(num).startswith("5"):
+                    print(num)
+
+find_prime_numbers_starting_with_5()
+
+
+
+*The above code is using for loop to check for the prime number in the range of 500 to 1000 and then using 
+another for loop to check if the number is divisible by any number or not.
+
+*If the number is not divisible by any number then we check if the number starts with 5 or not. If the number starts with 5 then we print the number.
