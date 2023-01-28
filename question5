@@ -6,18 +6,7 @@ Please push the result in one of GitHub, GitLab, or BitBucket repositories (any 
 ![Panel](https://imgyukle.com/i/JwZqQq)
 
 
-# The largest heading
-## The second largest heading
-###### The smallest heading
-
-**This is bold text**
-*This text is italicized*
-***All this text is important***
-<sub>This is a subscript text</sub>
-<sup>This is a superscript text</sup>
-
-
-# User Management Screen UI Specification
+# **User Management Screen UI Specification**
 
 ## Requirements
 The screen should allow the user to view a list of all registered users.
