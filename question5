@@ -6,6 +6,68 @@ Please push the result in one of GitHub, GitLab, or BitBucket repositories (any 
 ![Panel](https://imgyukle.com/i/JwZqQq)
 
 
-#The largest heading
-##The second largest heading
-######The smallest heading
+# The largest heading
+## The second largest heading
+###### The smallest heading
+
+**This is bold text**
+*This text is italicized*
+***All this text is important***
+<sub>This is a subscript text</sub>
+<sup>This is a superscript text</sup>
+
+
+# User Management Screen UI Specification
+
+## Requirements
+The screen should allow the user to view a list of all registered users.
+The user should be able to search for a specific user by name or email.
+The user should be able to sort the user list by name or email.
+The screen must allow the user to view, create, update, and delete users.
+The screen must display the following information for each user: name, email, role (e.g. admin, user), and status (active/inactive).
+The user should be able to view details of a selected user.
+The user should be able to assign roles to a selected user.
+The user should be able to filter the user list by role.
+The screen must be responsive and accessible.
+
+## Initial State:
+The table should be displayed with all users loaded and no filters applied.
+The add, edit, and delete buttons should be disabled until a user is selected.
+The bulk action button should be disabled until multiple users are selected.
+Upon opening the user management screen, all Users will be displayed in the table sorted by date created.
+The search bar will be empty.
+The role dropdown will be set to "All".
+The sort buttons will be set to "Date Created".
+
+## UI Components
+User list table: displays a list of all registered users, including name, email, and role.
+Search bar: allows the user to search for a specific user by name or email.
+Sort dropdown: allows the user to sort the user list by name or email.
+Add button: allows the user to add a new user.
+Edit button: allows the user to edit an existing user.
+Delete button: allows the user to delete a user.
+Role filter dropdown: allows the user to filter the user list by role.
+User details modal: displays detailed information of a selected user, including name, email, and role.
+Role assign modal: allows the user to assign a role to a selected user.
+
+## Behavior
+When the screen is first loaded, the user list table will show all registered users sorted by name in ascending order.
+When the user searches for a specific user, the user list table will show only the matching users.
+When the user sorts the user list, the table will be sorted accordingly.
+When the user clicks the add button, the user details modal will open, allowing the user to add a new user.
+When the user clicks the edit button, the user details modal will open, allowing the user to edit the selected user.
+When the user clicks the delete button, the user will be prompted to confirm the deletion before it is deleted.
+When the user selects a user from the user list table, the user details modal will open, showing detailed information of the selected user.
+When the user clicks the role filter dropdown, it will show the list of roles and allow user to filter the user list by roles.
+When the user clicks the role assign button, the role assign modal will open, allowing the user to assign a role to the selected user.
+User experience
+The user should be able to easily view, search, sort, and manage all registered users.
+The user should be able to quickly find and view detailed information of a specific user.
+The user should be able to easily assign roles to users.
+The user should be able to filter the user list by role.
+
+## Accessibility
+All UI components will have appropriate ARIA roles, labels, and attributes for accessibility.
+The table will have appropriate headers and data cells to indicate relationships between data for accessibility.
+
+
